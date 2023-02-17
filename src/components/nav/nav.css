@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 2rem;
+    background-color: #fb641b;
+    color: white;
+    z-index: 1;
+}
+
+nav a{
+    color: white;
+    margin: 0 2rem;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 1.1rem;
+}
+
+nav a:hover{
+    color: #1450f5;
+}
+
+header .nav_btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.5rem;
+}
+
+.hiden{
+    visibility: hidden;
+    opacity: 0;
+}
+
+@media screen and (max-width: 1024px){
+    nav a{
+        font-size: 1rem;
+        margin: 0 1rem;
+    }
+}
+@media screen and (max-width: 600px){
+    header .nav_btn{
+        visibility: visible;
+        opacity: 1;
+    }
+    header nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        transition: 1s;
+        transform: translateY(-100vh);
+        flex-direction: column;
+        background-color: #fb641b;
+        color: white;
+    }
+
+    header .responsive_nav{
+        transform: none;
+    }
+    nav .nav_close_btn{
+        position: absolute;
+        top: 1.2rem;
+        right: 2rem;
+    }
+    nav a{
+        font-size: 1.8rem;
+    }
+}

@@ -1,0 +1,173 @@
+.contact_container{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 60%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius: 10px;
+}
+.contact_container .contact_left{
+    width: 55%;
+    height: 100%;
+}
+.contact_container .contact_left h2{
+    margin: 20px 0;
+    margin-left: 40px;
+    font-size: 35px;
+    font-weight: 300;
+    color: #fb641b;
+}
+
+.contact_container .contact_left form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact_container .contact_left form .names{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form input{
+    height: 35px;
+    border: none;
+    padding: 5px 10px;
+    background-color: transparent;
+    border-bottom: 1px solid #fb641b;
+}
+.contact_container .contact_left form .names input{
+    margin: 20px 10px;
+    width: 49%;
+}
+input:focus{
+    outline: none;
+}
+
+.contact_container .contact_left form input{
+    width: 85%;
+    margin: 10px 10px 30px 10px;
+}
+.contact_container .contact_left form textarea{
+    width: 85%;
+    resize: none;
+    margin: 10px;
+    border: none;
+    padding: 5px 10px;
+    background-color: transparent;
+    border-bottom: 1px solid #fb641b;
+}
+.contact_container .contact_left form textarea:focus{
+    outline: none;
+}
+.contact_container .contact_left .con_btn{
+    width: 87%;
+}
+.contact_container .contact_left form button{
+    margin: 5px;
+    border: 2px solid transparent;
+    padding: 5px 7px;
+    background-color: #fb641b;
+    color: white;
+    font-size: .9rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .5s;
+}
+.contact_container .contact_right{
+    width: 45%;
+    height: 100%;
+    background-color: #fb641b;
+    border-radius: 0 10px 10px 0;
+    color: white;
+}
+
+.contact_container .contact_right h3{
+    margin: 20px 20px;
+    font-size: 24px;
+    font-weight: 300;
+}
+.contact_container .contact_right p{
+    margin: 20px 20px;
+    font-size: 15px;
+    font-weight: 300;
+}
+.contact_container .contact_right .contact_location, .contact_phone, .contact_mail, .contact_website{
+    margin: 20px 20px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.contact_container .contact_right .contact_location span, .contact_phone span, .contact_mail span, .contact_website span{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffb42a;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+.contact_container .contact_right .contact_location p, .contact_phone p, .contact_mail p, .contact_website p{
+    width: 65%;
+    word-break: break-all;
+}
+.contact_container .contact_right .contact_location p a, .contact_phone p a, .contact_mail p a, .contact_website p a{
+    color: rgb(216, 216, 216);
+}
+
+.hide{
+    display: none;
+}
+@media screen and (max-width: 1024px){
+    .contact_container{
+        width: 80%;
+    }
+    .contact_location p, .contact_phone p, .contact_mail p, .contact_website p{
+        font-size: 13px !important;
+    }
+    .contact_container .contact_right .contact_location span, .contact_phone span, .contact_mail span, .contact_website span{
+        width:  45px;
+        height: 45px;
+        font-size: 18px;
+    }
+    .contact_container .contact_right .contact_location p, .contact_phone p, .contact_mail p, .contact_website p{
+        width: 65%;
+        word-break: break-all;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .contact_container{
+        flex-direction: column;
+    }
+    .contact_container .contact_left{
+        width: 100%;
+        height: 100%;
+    }
+    .contact_container .contact_right{
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+        height: 100%;
+    }
+    .contact_container .contact_right .contact_location span, .contact_phone span, .contact_mail span, .contact_website span{
+        width:  35px;
+        height: 35px;
+        font-size: 18px;
+    }
+    .contact_container .contact_right .contact_location p, .contact_phone p, .contact_mail p, .contact_website p{
+        width: 75%;
+        word-break: break-all;
+        font-size: 2px;
+    }
+    .contact_container .contact_left form button{
+        margin-bottom: 15px;
+    }
+}

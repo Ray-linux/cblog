@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.banner{
+    position: sticky;
+    top: 70px;
+    width: 100%;
+    height: 60vh;
+    z-index: -2;
+    background:url('../../assets/banner.png'), black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.overlay{
+    position: sticky;
+    top: 70px;
+    width: 100%;
+    height: 60vh;
+    z-index: -1;
+    background: #0000006c;
+}
+
+.content{
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.content h1{
+    font-size: 50px;
+    margin: 20px 30px;
+}
+.content span .text{
+    font-size: 90px;
+}
+
+@media screen and (max-width: 1024px) {
+    .banner , .overlay , .content{
+        height: 50vh;
+    }
+    .content h1{
+        font-size: 37px;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .banner , .overlay , .content{
+        height: 30vh;
+    }
+    .content h1{
+        font-size: 26px;
+    }
+}

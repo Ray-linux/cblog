@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.center {
+    margin: auto;
+    width: 26%;
+    padding: 10px;
+}
+
+.login_container{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.login_container h2{
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+    color: #fb641b;
+}
+
+.login_container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login_container form input{
+    width: 17rem;
+    height: 2.4rem;
+    border: 2px solid transparent;
+    border-bottom: 1px solid;
+    margin: 10px;
+}
+
+.login_container form input:focus{
+    outline: none;
+    border-bottom: 3px solid;
+
+}
+
+.login_container form button{
+    width: 17rem;
+    height: 2.2rem;
+    border: 2px solid transparent;
+    margin: 8px;
+    cursor: pointer;
+}
+.login_container form h3{
+    font-weight: 400;
+    color: #8b8b8b;
+}
+
+#login{
+    color: white;
+    background-color: #fb641b;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#register{
+    background-color: transparent;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: rgb(75, 75, 182);
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#register:hover{
+    color: white;
+    background-color: #fb641b;
+}
+
+
+.error{
+    width: 26%;
+    height: 45px;
+    display: flex;
+    background-color: #d9534fb4;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    margin: 10px;
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    color: #b02a37;
+    transition: 0.5s;
+    z-index: 1;
+    
+}
+
+.error span{
+    margin: 0 20px;
+}
+.error button{
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: #b02a37;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.success{
+    width: 26%;
+    height: 45px;
+    display: flex;
+    background-color: #36be36b4;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    margin: 10px;
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    color: #146c43;
+    transition: 0.5s;
+}
+
+.success span{
+    margin: 0 20px;
+}
+.success button{
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: #146c43;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .center{
+        width: 40%;
+    }
+    .login_container form input{
+        width: 15rem;
+    }
+    .login_container form button{
+        width: 15rem;
+    }
+    .error{
+        width: 36%;
+    }
+    .success{
+        width: 36%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .center{
+        width: 85%;
+    }
+    .login_container form input{
+        width: 15rem;
+    }
+    .login_container form button{
+        width: 15rem;
+    }
+    .error{
+        width: 56%;
+    }
+    .success{
+        width: 56%;
+    }
+}
