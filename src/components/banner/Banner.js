@@ -1,5 +1,4 @@
 import "./banner.css";
-import banner from "../../assets/banner.jpg";
 import TypeWriterEffect from 'react-typewriter-effect';
 
 
