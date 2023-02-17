@@ -3,7 +3,7 @@ import {API_NOTIFICATION_MESSAGES, SERVICE_URLS}  from '../constains/config.js'
 import { getAccessToken, getType } from "../utils/common-utils";
 
 // const API_URL = `http://localhost:8000`;
-const API_URL = ``;
+const API_URL = `https://hacktastics.onrender.com`;
 
 
 const axiosInstance = axios.create({
