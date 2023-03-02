@@ -10,14 +10,14 @@ export default function Banner() {
         <div className="overlay"></div>
       </div>
       <div className="content">
-        <h1>Logo</h1>
+        <h1>Welcome to Hacktastic</h1>
         <span>
         <TypeWriterEffect className='text'
         textStyle={{
           // fontFamily: '',
           color: '#fff',
           fontWeight: 500,
-          fontSize: '1.5em',
+          fontSize: '.9em',
         }}
         startDelay={2000}
         cursorColor="#ffffff"

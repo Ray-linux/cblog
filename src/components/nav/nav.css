@@ -18,6 +18,10 @@ header{
     z-index: 1;
 }
 
+header img{
+    width: 150px;
+}
+
 nav a{
     color: white;
     margin: 0 2rem;

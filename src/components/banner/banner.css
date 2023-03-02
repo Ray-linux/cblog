@@ -35,8 +35,9 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 .content h1{
-    font-size: 50px;
+    font-size: 40px;
     margin: 20px 30px;
+    color: rgb(255, 227, 191);
 }
 .content span .text{
     font-size: 90px;

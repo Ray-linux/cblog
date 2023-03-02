@@ -5,6 +5,8 @@ import {Link} from 'react-router-dom'
 import './nav.css'
 import { useNavigate } from "react-router-dom";
 
+import logo from "../../assets/logo.png"
+
 
 export default function Nav({isAuthenticated, isUserAuthenticated}) {
     // const navRaf = useRef();
@@ -25,7 +27,10 @@ export default function Nav({isAuthenticated, isUserAuthenticated}) {
     }
   return (
     <header>
-        <h3>LOGO</h3>
+        {/* <h3>LOGO</h3> */}
+        <Link to='/' >
+        <img src={logo} alt="hacktastic" />
+        </Link>
         <nav  className={!isMobile?'':'responsive_nav'}>
             <Link to='/' onClick={() => setIsMobile(false)}>Home</Link>
             <Link to='/about' onClick={() => setIsMobile(false)}>About</Link>
