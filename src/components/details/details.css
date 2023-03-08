@@ -6,6 +6,7 @@
 }
 
 .detailed_container .detailed_image{
+    margin-top: 20px;
     width: 80%;
     display: flex;
     align-items: center;

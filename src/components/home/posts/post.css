@@ -44,6 +44,7 @@
     word-break: keep-all;
     overflow: hidden;
     color: #444;
+    min-height: 50px;
 }
 
 #author{
